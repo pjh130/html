@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!--外部样式表-->
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+	<meta charset="utf-8">
+	<title>我的CSS样例</title>
+	<style>
+		/*这是个注释*/
+		
+		p {
+			color: red;
+			text-align: center;
+		}
+		
+		#para1 {
+			text-align: center;
+			color: red;
+		}
+		
+		.center {
+			text-align: center;
+		}
+	</style>
+</head>
+
+<body>
+	<hr border="10">
+	<h1 style="color:red;text-align:left;"> 标题h1</h1>
+	<p style="color:blue;text-align:left;">Hello World!</p>
+	<p id="para1">影响元素id的style设置!</p>
+	<h1 class="center">标题居中</h1>
+	<p class="center">段落居中。</p>
+	<p id="demo1" class="center">等待异步改变内容</p>
+	<p style="color:sienna;margin-left:20px;text-align:right">这是一个段落。</p>
+	<hr style="background-color:red;">
+	<p>这个段落采用CSS样式化。</p>
+
+	<script>
+		setTimeout(function () {
+    	document.getElementById("demo1").innerHTML="异步改变了内容:" + Date();
+		}, 5000);
+
+	</script>
+
+</body>
+
+</html>

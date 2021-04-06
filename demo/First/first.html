@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style type="text/css">
+    body {
+      background-color: yellow
+    }
+    
+    p {
+      color: blue
+    }
+  </style>
+  <!--规定页面上所有链接的默认 URL 和默认目标：-->
+  <base href="http://www.runoob.com/images/" target="_blank">
+  <meta charset="utf-8">
+  <title>我的第一个html</title>
+</head>
+
+<body>
+
+  <h1 style="background-color:red;font-family:verdana;">这是一个标题。</h1>
+  <h2 style="text-align:center;">这是一个标题。</h2>
+  <h3>这是一个标题。</h3>
+  <br>
+  <p style="background-color:green;">这是一个段落 </p>
+  <p style="font-family:arial;color:red;font-size:20px;"> <b>这是另一个段落</b> </p>
+  <br>
+  <p>我们在每天早上
+    <time>9:00</time> 开始营业。</p>
+  <p>我在
+    <time datetime="2016-02-14">情人节</time> 有个约会。</p>
+
+  <hr>
+  <img src="boat.gif" alt="Big Boat" <p> 图片不存在时显示alt里边的内容</p>>
+  <br>
+  <img src="d:/test/pixmap.png" alt="pixmap png">
+
+  <p>无边框的图片链接:
+    <a href="//www.runoob.com/html/html-tutorial.html">
+      <img border="0" src="http://www.runoob.com/images/pulpit.jpg" alt="HTML 教程" width="32" height="32"></a>
+  </p>
+
+  <b>粗体文本</b><br>
+  <code>计算机代码</code><br>
+  <em>强调文本</em><br>
+  <i>斜体文本</i><br>
+  <kbd>键盘输入</kbd><br>
+  <pre>预格式化文本</pre><br>
+  <small>更小的文本</small><br>
+  <strong>重要的文本</strong><br>
+
+  <hr>
+  <p>
+    每个表格从一个 table 标签开始。 每个表格行从 tr 标签开始。 每个表格的数据从 td 标签开始。 border="0"时没有边框
+  </p>
+  <h4>两行三列:</h4>
+  <table border="1">
+    <caption style="text-align:right;">表的标题</caption>
+    <tr>
+      <th>Header 1</th>
+      <th>Header 2</th>
+    </tr>
+    <tr>
+      <td>row 1, cell 1</td>
+      <td>row 1, cell 2</td>
+    </tr>
+    <tr>
+      <td>row 2, cell 1</td>
+      <td>row 2, cell 2</td>
+    </tr>
+  </table>
+
+  <h4>垂直标题:</h4>
+  <table border="1">
+    <tr>
+      <th>First Name:</th>
+      <td>Bill Gates</td>
+    </tr>
+    <tr>
+      <th>Telephone:</th>
+      <td>555 77 854</td>
+    </tr>
+    <tr>
+      <th>Telephone:</th>
+      <td>555 77 855</td>
+    </tr>
+  </table>
+
+  <h4>单元格跨两列:</h4>
+  <table border="1">
+    <tr>
+      <th>Name</th>
+      <th colspan="2">Telephone</th>
+    </tr>
+    <tr>
+      <td>Bill Gates</td>
+      <td>555 77 854</td>
+      <td>555 77 855</td>
+    </tr>
+  </table>
+
+  <h4>单元格跨两行:</h4>
+  <table border="1">
+    <tr>
+      <th>First Name:</th>
+      <td>Bill Gates</td>
+    </tr>
+    <tr>
+      <th rowspan="2">Telephone:</th>
+      <td>555 77 854</td>
+    </tr>
+    <tr>
+      <td>555 77 855</td>
+    </tr>
+  </table>
+
+  <hr>
+  <fieldset>
+    <legend>Personal information:</legend>
+    <p>点击确认按钮，那么输入数据会传送到 "html_form_action.php" 的页面</p>
+    <form name="input" action="html_form_action.php" method="get">
+      First name: <input type="text" name="firstname"><br> Last name: <input type="text" name="lastname">
+      <br> Username: <input type="text" name="user"><br> Password: <input type="password" name="password"><br>
+      <input type="submit" value="提交">
+      <br>
+      <input type="radio" name="sex" value="male">Male<br>
+      <input type="radio" name="sex" value="female">Female
+      <br>
+      <input type="checkbox" name="vehicle" value="Bike">I have a bike<br>
+      <input type="checkbox" name="vehicle" value="Car">I have a car
+
+      <p>下拉菜单</p>
+      <select name="cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat" selected>Fiat</option>
+    <option value="audi">Audi</option>
+    </select>
+      <br>
+      <textarea rows="10" cols="30">
+    我是一个文本框。
+    </textarea>
+      <input type="button" value="Send">
+      <input type="reset" value="重置">
+
+    </form>
+  </fieldset>
+  <hr>
+  <h3>发送邮件到 someone@example.com:</h3>
+
+  <form action="MAILTO:someone@example.com" method="post" enctype="text/plain">
+    Name:<br>
+    <input type="text" name="name" value="your name"><br> E-mail:
+    <br>
+    <input type="text" name="mail" value="your email"><br> Comment:
+    <br>
+    <input type="text" name="comment" value="your comment" size="50"><br><br>
+    <input type="submit" value="发送">
+    <input type="reset" value="重置">
+  </form>
+
+  <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
+    <input type="range" id="a" value="50">100 +
+    <input type="number" id="b" value="50"> =
+    <output name="x" for="a b"></output>
+  </form>
+
+  <form action="demo_keygen.asp" method="get">
+    用户名: <input type="text" name="usr_name"> 加密:
+    <keygen name="security">
+    <input type="submit">
+  </form>
+
+  <script>
+window.onload = function() {
+    // alert("你好，我是一个警告框！");
+    var body = document.documentElement;
+    document.body.scrollTop = body.scrollHeight;
+}
+</script>
+
+</body>
+
+</html>

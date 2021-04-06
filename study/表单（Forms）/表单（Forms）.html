@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--设置字体-->
+    <meta charset="utf-8">
+    <!--设置标题-->
+    <title>表单forms</title>
+
+    <!--规定页面上所有链接的默认 URL 和默认目标：-->
+    <!--<base href="http://www.xxx.com" target="_blank">-->
+
+    <!--引入的脚本-->
+    <!--<script src="template.js"></script>-->
+
+    <!--外部样式表-->
+    <!--<link rel="stylesheet" type="text/css" href="template.css">-->
+    <!--<style></style>-->
+    <!--<style type="text/css"></style>-->
+</head>
+
+<body>
+    <fieldset>
+        <legend>Personal information:</legend>
+        <p>点击确认按钮，那么输入数据会传送到 "html_form_action.php" 的页面</p>
+        <form name="input" action="html_form_action.php" method="get">
+            First name: <input type="text" name="firstname"><br> Last name: <input type="text" name="lastname">
+            <br> Username: <input type="text" name="user"><br> Password: <input type="password" name="password"><br>
+            <input type="submit" value="提交">
+            <br>
+            <input type="radio" name="sex" value="male">Male<br>
+            <input type="radio" name="sex" value="female">Female
+            <br>
+            <input type="checkbox" name="vehicle" value="Bike">I have a bike<br>
+            <input type="checkbox" name="vehicle" value="Car">I have a car
+
+            <p>下拉菜单</p>
+            <select name="cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat" selected>Fiat</option>
+    <option value="audi">Audi</option>
+    </select>
+            <br>
+            <textarea rows="10" cols="30">
+    我是一个文本框。
+    </textarea>
+            <input type="button" value="Send">
+            <input type="reset" value="重置">
+
+        </form>
+    </fieldset>
+    <hr>
+    <h3>发送邮件到 someone@example.com:</h3>
+
+    <form action="MAILTO:someone@example.com" method="post" enctype="text/plain">
+        Name:<br>
+        <input type="text" name="name" value="your name"><br> E-mail:
+        <br>
+        <input type="text" name="mail" value="your email"><br> Comment:
+        <br>
+        <input type="text" name="comment" value="your comment" size="50"><br><br>
+        <input type="submit" value="发送">
+        <input type="reset" value="重置">
+    </form>
+
+    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
+        <input type="range" id="a" value="50">100 +
+        <input type="number" id="b" value="50"> =
+        <output name="x" for="a b"></output>
+    </form>
+
+    <form action="demo_keygen.asp" method="get">
+        用户名: <input type="text" name="usr_name"> 加密:
+        <keygen name="security">
+        <input type="submit">
+    </form>
+</body>
+
+</html>

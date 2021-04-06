@@ -1,0 +1,205 @@
+/*--颜色(Color) 属性
+    示例        JavaScript 语法：	object.style.opacity=0.5
+    示例        
+    div {
+        opacity:0.5;
+    }
+
+    color-profile	  允许使用源的颜色配置文件的默认以外的规范
+    opacity	          设置一个元素的透明度级别
+    rendering-intent  允许超过默认颜色配置文件渲染意向的其他规范
+*/
+
+/*--尺寸(Dimension) 属性
+    示例        JavaScript 语法：	object.style.height="50px"
+    示例        
+    p {
+        height:100px;
+        width:100px;
+    }
+
+    height	    设置元素的高度	
+    max-height	设置元素的最大高度	
+    max-width	设置元素的最大宽度	
+    min-height	设置元素的最小高度	
+    min-width	设置元素的最小宽度	
+    width	    设置元素的宽度
+*/
+
+/*--字体（Font） 属性
+    示例        JavaScript 语法：	object.style.font="italic small-caps bold 12px arial,sans-serif"
+    示例        
+    p {
+        font:15px arial,sans-serif;
+    }
+
+    font	            在一个声明中设置所有字体属性	
+    font-family	        规定文本的字体系列	
+    font-size	        规定文本的字体尺寸	
+    font-style	        规定文本的字体样式	
+    font-variant	    规定文本的字体样式	
+    font-weight	        规定字体的粗细	
+    @font-face	        一个规则，允许网站下载并使用其他超过"Web- safe"字体的字体	
+    font-size-adjust	为元素规定 aspect 值	
+    font-stretch	    收缩或拉伸当前的字体系列
+*/
+
+/*--背景属性
+    示例        JavaScript 语法：	object object.style.background="red url(smiley.gif) top left no-repeat"
+    示例        
+    body { 
+        background: #00ff00 url('smiley.gif') no-repeat fixed center; 
+    }
+
+    background	            复合属性。设置对象的背景特性。	
+    background-attachment	设置或检索背景图像是随对象内容滚动还是固定的。必须先指定background-image属性。	
+    background-color	    设置或检索对象的背景颜色。	
+    background-image	    设置或检索对象的背景图像。	
+    background-position	    设置或检索对象的背景图像位置。必须先指定background-image属性。	
+    background-repeat	    设置或检索对象的背景图像如何铺排填充。必须先指定background-image属性。	
+    background-clip	        指定对象的背景图像向外裁剪的区域。	
+    background-origin	    S设置或检索对象的背景图像计算background-position时的参考原点(位置)。	
+    background-size	        检索或设置对象的背景图像的尺寸大小。
+*/
+
+/*--网格（Grid） 属性
+    示例        JavaScript 语法：	object.style.gridColumns="50% * * 200px"
+    示例        
+    div
+    {
+        grid-columns:50% * * 200px;
+    }
+
+    grid-columns	指定在网格中每列的宽度	
+    grid-rows	指定在网格中每列的高度
+*/
+
+/*--内边距(Padding) 属性
+    示例        JavaScript 语法：	object.style.padding="10px 5px"
+    示例        
+    p {
+        padding:2cm 4cm 3cm 4cm;
+    }
+
+    padding	        在一个声明中设置所有填充属性	
+    padding-bottom	设置元素的底填充	
+    padding-left	设置元素的左填充	
+    padding-right	设置元素的右填充	
+    padding-top	    设置元素的顶部填充
+*/
+
+/*--超链接(Hyperlink) 属性
+    示例        JavaScript 语法：	object.style.target="new front"
+    示例 
+    a {
+        target:new front;
+    }
+
+    target	        简写属性设置target-name, target-new,和target-position属性	
+    target-name	    指定在何处打开链接（目标位置）	
+    target-new	    指定是否有新的目标链接打开一个新窗口或在现有窗口打开新标签	
+    target-position	指定应该放置新的目标链接的位置
+*/
+
+/*--文本（Text） 属性
+    示例        JavaScript 语法：	object.style.color="#FF0000"
+    示例        
+    p {
+        color:rgb(0,0,255);
+    }
+
+    color	            设置文本的颜色	
+    direction	        规定文本的方向 / 书写方向	
+    letter-spacing	    设置字符间距	
+    line-height	        设置行高	
+    text-align	        规定文本的水平对齐方式	
+    text-decoration	    规定添加到文本的装饰效果	
+    text-indent	        规定文本块首行的缩进	
+    text-transform	    控制文本的大小写	
+    unicode-bidi	 	
+    vertical-align	    设置元素的垂直对齐方式	
+    white-space	        设置怎样给一元素控件留白	
+    word-spacing	    设置单词间距	
+    text-emphasis	    向元素的文本应用重点标记以及重点标记的前景色。	
+    hanging-punctuation	指定一个标点符号是否可能超出行框	
+    punctuation-trim	指定一个标点符号是否要去掉	
+    text-align-last	    当 text-align 设置为 justify 时，最后一行的对齐方式。	
+    text-justify	    当 text-align 设置为 justify 时指定分散对齐的方式。	
+    text-outline	    设置文字的轮廓。	
+    text-overflow	    指定当文本溢出包含的元素，应该发生什么	
+    text-shadow	        为文本添加阴影	
+    text-wrap	        指定文本换行规则	
+    word-break	        指定非CJK文字的断行规则	
+    word-wrap	        设置浏览器是否对过长的单词进行换行。
+*/
+
+/*--边框(Border) 和 轮廓(Outline) 属性
+    示例        JavaScript 语法：	object object.style.border="3px solid blue"
+    示例        
+    p {
+        border:5px solid red;
+    }
+
+    border	                    复合属性。设置对象边框的特性。	
+    border-bottom	            复合属性。设置对象底部边框的特性。	
+    border-bottom-color	        设置或检索对象的底部边框颜色。	
+    border-bottom-style	        设置或检索对象的底部边框样式。	
+    border-bottom-width	        设置或检索对象的底部边框宽度。	
+    border-color	            置或检索对象的边框颜色。	
+    border-left	                复合属性。设置对象左边边框的特性。	
+    border-left-color	        设置或检索对象的左边边框颜色。	
+    border-left-style	        设置或检索对象的左边边框样式。	
+    border-left-width	        设置或检索对象的左边边框宽度。	
+    border-right	            复合属性。设置对象右边边框的特性。	
+    border-right-color	        设置或检索对象的右边边框颜色。	
+    border-right-style	        设置或检索对象的右边边框样式。	
+    border-right-width	        设置或检索对象的右边边框宽度。	
+    border-style	            设置或检索对象的边框样式。	
+    border-top	                复合属性。设置对象顶部边框的特性。	
+    border-top-color	        设置或检索对象的顶部边框颜色	
+    border-top-style	        设置或检索对象的顶部边框样式。	
+    border-top-width	        设置或检索对象的顶部边框宽度。	
+    border-width	            设置或检索对象的边框宽度。	
+    outline	                    复合属性。设置或检索对象外的线条轮廓。	
+    outline-color	            设置或检索对象外的线条轮廓的颜色。	
+    outline-style	            设置或检索对象外的线条轮廓的样式。	
+    outline-width	            设置或检索对象外的线条轮廓的宽度。	
+    border-bottom-left-radius	设置或检索对象的左下角圆角边框。提供2个参数，2个参数以空格分隔，每个参数允许设置1个参数值，第1个参数表示水平半径，第2个参数表示垂直半径，如第2个参数省略，则默认等于第1个参数	3
+    border-bottom-right-radius	设置或检索对象的右下角圆角边框。	
+    border-image	            设置或检索对象的边框样式使用图像来填充。	
+    border-image-outset	        规定边框图像超过边框的量。	
+    border-image-repeat	        规定图像边框是否应该被重复（repeated）、拉伸（stretched）或铺满（rounded）。	
+    border-image-slice	        规定图像边框的向内偏移。	3
+    border-image-source	        规定要使用的图像，代替 border-style 属性中设置的边框样式。	
+    border-image-width	        规定图像边框的宽度。	
+    border-radius	            设置或检索对象使用圆角边框。	
+    border-top-left-radius	    定义左上角边框的形状。	
+    border-top-right-radius	    定义右上角边框的形状。	
+    box-decoration-break	    规定行内元素被折行	
+    box-shadow	                向方框添加一个或多个阴影。
+*/ 
+
+/*--定位（Positioning） 属性
+    示例        JavaScript 语法：	object.style.bottom="50px"
+    示例        
+    img {
+        position:absolute;
+        bottom:5px;
+    }
+
+    bottom	设置定位元素下外边距边界与其包含块下边界之间的偏移	 
+    clear	规定元素的哪一侧不允许其他浮动元素	
+    clip	剪裁绝对定位元素	
+    cursor	规定要显示的光标的类型（形状）	
+    display	规定元素应该生成的框的类型	
+    float	规定框是否应该浮动	
+    left	设置定位元素左外边距边界与其包含块左边界之间的偏移	
+    overflow
+    规定当内容溢出元素框时发生的事情	
+    position	规定元素的定位类型	
+    right	设置定位元素右外边距边界与其包含块右边界之间的偏移	
+    top	设置定位元素的上外边距边界与其包含块上边界之间的偏移	
+    visibility	规定元素是否可见	
+    z-index	设置元素的堆叠顺序
+*/
+

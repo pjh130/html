@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>我的jquery示例</title>
+    <!--Production version - 用于实际的网站中，已被精简和压缩-->
+    <!--<script src="jquery-3.6.0.min.js"> </script>-->
+    <!--Development version - 用于测试和开发（未压缩，是可读的代码）-->
+    <script src="jquery-3.6.0.js"> </script>
+    <!--<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"> </script>-->
+    <!--<script src="jquery.min.js"></script>-->
+    
+</head>
+
+<body>
+    <p> "Hello world First"</p>
+    <script>
+    document.write("Hello World! " );
+    </script>
+
+    <!--JavaScript 入口函数:-->
+    <!--JavaScript 的 window.onload 事件是等到所有内容，包括外部图片之类的文件加载完后，才会执行-->
+    <script>
+    document.write("Hello World! begin" );
+    //onload的优先级别高
+    window.onload = function () {
+        // 执行代码
+        // document.write("Hello World! onload");
+        alert("Hello World! onload")
+    }
+    document.write("Hello World! end");
+    </script>
+
+</body>
+
+<script>
+    // jQuery 入口函数:
+    // jQuery 的入口函数是在 html 所有标签(DOM)都加载之后，就会去执行
+
+    //完全写法
+    $(document).ready(function(){
+        // 开始写 jQuery 代码...
+        // (this).wite("jQuery start 1")
+        $("p").click(function(){
+            $(this).hide();
+        });
+    });
+
+    //jQuery 简写
+    $(function(){
+        // 开始写 jQuery 代码...
+        alert("jQuery start min")
+    });
+</script>
+
+</html>
