@@ -4,7 +4,7 @@ window.onload = function () {
 	// 执行代码
 }
 
-// jQuery 入口函数(必须包含jQuery的js)
+// jQuery 入口函数(必须<script src="jquery.min.js"></script>)
 // jQuery 的入口函数是在 html 所有标签(DOM)都加载之后，就会去执行
 //完全写法
 $(document).ready(function(){

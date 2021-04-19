@@ -112,7 +112,7 @@
     direction	        规定文本的方向 / 书写方向	
     letter-spacing	    设置字符间距	
     line-height	        设置行高	
-    text-align	        规定文本的水平对齐方式	
+    text-align	        规定文本的水平对齐方式	当text-align设置为"justify"，每一行被展开为宽度相等，左，右外边距是对齐
     text-decoration	    规定添加到文本的装饰效果	
     text-indent	        规定文本块首行的缩进	
     text-transform	    控制文本的大小写	

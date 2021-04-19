@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--设置字体-->
+    <meta charset="utf-8">
+    <!--设置标题-->
+    <title>多媒体Media</title>
+
+    <!--规定页面上所有链接的默认 URL 和默认目标：-->
+    <base href="https://www.runoob.com/try/demo_source/" target="_blank">
+
+    <!--引入的脚本-->
+    <!--<script src="template.js"></script>-->
+
+    <!--外部样式表-->
+    <!--<link rel="stylesheet" type="text/css" href="template.css">-->
+    <!--<style></style>-->
+    <!--<style type="text/css"></style>-->
+</head>
+
+<body>
+    <!--所有主流浏览器都支持 <object> 标签。
+    <object> 元素定义了在 HTML 文档中嵌入的对象。
+    该标签用于插入对象 (例如在网页中嵌入 Java 小程序, PDF 阅读器, Flash 播放器)-->
+    <object width="400" height="50" data="bookmark.swf"></object>
+    <br>
+    <object height="50" width="100" data="https://www.runoob.com/try/demo_source/horse.mp3"></object>
+    <br>
+    <!--设置参数 "autoplay" 为 "true"，音频载入后会自动播放-->
+    <!--<object data="horse.wav">-->
+    <object data="horse.mp3">
+        <param name="autoplay" value="true">
+    </object>
+
+    <hr>
+    <!--<embed>标签定义外部（非 HTML）内容的容器。（这是一个 HTML5 标签，在 HTML4 中是非法的，但是所有浏览器中都有效）。
+    下面的代码片段能够显示嵌入网页中的 MP3 文件-->
+    <embed height="50" width="100" src="https://www.runoob.com/try/demo_source/horse.mp3">
+    <p>如果你无法听到该音频，那么可能你的电脑或浏览器不支持该文件格式。</p>
+    <p>或者你没有打开扬声器。</p>
+
+    <hr>
+    <!--HTML5 <audio> 元素是一个 HTML5 元素，在 HTML 4 中是非法的，但在所有浏览器中都有效-->
+    <!--最好的 HTML 解决方法：HTML5 <audio> 元素会尝试以 mp3 或 ogg 来播放音频。如果失败，代码将回退尝试 <embed> 元素-->
+    <audio controls>
+        <source src="horse.mp3" type="audio/mpeg">
+        <source src="horse.ogg" type="audio/ogg">
+        <embed height="50" width="100" src="horse.mp3">
+    </audio>
+
+    <hr>
+    <!--如果网页包含指向媒体文件的超链接，大多数浏览器会使用"辅助应用程序"来播放文件-->
+    <a href="horse.mp3">Play the sound</a>
+
+    <hr>
+    <!--播放录像：-->
+    <!--<video> 标签定义视频，比如电影片段或其他视频流。
+    目前，<video> 元素支持三种视频格式：MP4、WebM、Ogg-->
+    <video width="320" height="240" controls>
+        <source src="movie.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg"> 您的浏览器不支持 video 标签。
+    </video>
+
+    <hr>
+    <hr>
+    <!--实例中使用了 4 种不同的视频格式。HTML 5 <video> 元素会尝试播放以 mp4、ogg 或 webm 格式中的一种来播放视频。
+        如果均失败，则回退到 <embed> 元素-->
+    <video width="320" height="240" controls>
+        <source src="movie.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+        <source src="movie.webm" type="video/webm">
+        <object data="movie.mp4" width="320" height="240">
+            <embed src="movie.swf" width="320" height="240">
+        </object>
+    </video>
+</body>
+
+</html>
